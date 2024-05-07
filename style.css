@@ -1,0 +1,413 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    background-color:teal;
+   
+}
+
+/* Header Styles */
+header {
+    background-color:goldenrod;
+    color: #fff;
+    padding: 5px 5px;
+   
+}
+
+header h1 {
+    margin: 0;
+}
+/* Logo Styles */
+.logo img {
+    width: 150px; /* Adjust the width of the logo */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    border-radius: 50%; /* Make the logo rounded */
+    border: 2px solid #000; /* Add a border around the logo */
+}
+
+/* Navigation Styles */
+nav {
+    background-color:lightcoral;/* Light background color */
+    padding: 5px 5px; /* Add padding for spacing */
+    border: 1px solid black; /* Set border to a light color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    border-color: #0056b3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 4px; /* Add margin between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;/* Dark text color */
+    padding: 5px 8px;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; /* Reduce font size */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: lightblue; /* Light background color on hover */
+}
+.browse{
+    text-align: center; /* Center the heading */
+    color: chocolate;
+    padding: 0 0; /* Increase top padding to move down */
+    
+}
+
+
+/* Hero Section Styles */
+.hero {
+    background-color:palegoldenrod;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e68a00;
+}
+/* Category Section Styles */
+.categories {
+    padding: 40px 0;
+    justify-content: space-between;
+    white-space: nowrap; /* Prevent wrapping of categories */
+}
+
+.category {
+    display: inline-block; /* Display categories in a row */
+    margin-right: 20px; /* Add spacing between categories */
+}
+
+.category a {
+    display: block;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.category img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    font-size: 18px;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Rest of the CSS styles */
+
+/* Featured Products Section Styles */
+.featured-products {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.featured-products .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: calc(25% - 20px); /* Adjust the width of each product card */
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.product p.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.product button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+blockquote {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+blockquote p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+blockquote footer {
+    font-size: 14px;
+    color: #888;
+}
+
+blockquote footer::before {
+    content: "-";
+    margin-right: 5px;
+}
+/* Artisan Spotlight Section Styles */
+.artisan-spotlight {
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.artisan-spotlight .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artisan {
+    width: calc(50% - 20px); /* Adjust the width of each artisan spotlight */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artisan h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.artisan p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.artisan a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.artisan a:hover {
+    background-color: #0056b3;
+}
+/* Rest of the CSS styles */
+
+/* Logo Styles */
+.logo img {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    border-radius: 30%; /* Make the logo rounded */
+    border: 2px solid #000; /* Add a border around the logo */
+}
+/* Search Bar Styles */
+.search-bar {
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Vertically center the input and button */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px; /* Adjust padding for input field */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Latest News Section Styles */
+.news-article img {
+    width: 200px; /* Set the width of the news images */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add border radius */
+    color:#e68a00;
+    background-color: #888;
+}
+/* Upcoming Events Section Styles */
+.event img {
+    width: 200px; /* Set the width of the event images */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add border radius */
+    color:#e68a00;
+    background-color: sandybrown;
+}
+/* Latest News and Upcoming Events Section Styles */
+.latest-news h2,
+.categories h2,
+.events h2 {
+    text-align: center; /* Center the heading */
+}
+
+.latest-news h3,
+
+.events h3 {
+    text-align: center; /* Center the heading */
+    color:brown;
+}
+
+/* Latest News Section Styles */
+.latest-news {
+    background-color: sandybrown; /* Background color for the Latest News section */
+    padding: 40px 0;
+}
+
+.latest-news h2 {
+    text-align: center; /* Center the heading */
+    color: lavenderblush;
+}
+
+.news-article {
+    background-color: palegoldenrod; /* Background color for individual news articles */
+    padding: 20px; /* Add padding around news articles */
+    margin-bottom: 20px; /* Add margin between news articles */
+    border-radius: 5px; /* Optional: Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+}
+
+/* Upcoming Events Section Styles */
+.events {
+    background-color: sandybrown;/* Background color for the Upcoming Events section */
+    padding: 40px 0;
+}
+
+.events h2 {
+    text-align: center; /* Center the heading */
+    color:lavenderblush;
+
+}
+
+.event {
+    background-color: sandybrown;/* Background color for individual events */
+    padding: 20px; /* Add padding around events */
+    margin-bottom: 20px; /* Add margin between events */
+    border-radius: 5px; /* Optional: Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+}
+
+/* Marquee Section Styles */
+.marquee {
+    background-color: skyblue; /* Background color for the marquee section */
+    color: firebrick; /* Text color for the marquee */
+    padding: 10px 0; /* Add padding to the marquee */
+}
+
+.marquee marquee {
+    font-size: 16px; /* Set the font size of the marquee text */
+    font-weight: bold; /* Make the marquee text bold */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
